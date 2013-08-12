@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/history_item_bg">
+    <TextView
+            android:id="@+id/history_item_txt_city"
+            style="@style/histroy_item_txt"
+            android:layout_marginLeft="20dp"
+            android:text="北京-上海"/>
+    <TextView
+            android:id="@+id/history_item_txt_date"
+            android:layout_toRightOf="@id/history_item_txt_city"
+            android:layout_marginLeft="60dp"
+            style="@style/histroy_item_txt"
+            android:text="星期六"/>
+    <TextView
+            android:id="@+id/history_ite_txt_go"
+            android:layout_toRightOf="@id/history_item_txt_date"
+            android:layout_marginLeft="5dp"
+            style="@style/histroy_item_txt"
+            android:text="出发"/>
+    <ImageView
+            android:id="@+id/history_ite_imgview_delete"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/delete_btn_selector"/>
+</RelativeLayout>

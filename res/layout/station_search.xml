@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <RelativeLayout
+            android:id="@+id/station_relativelayout_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/input_city_bg">
+        <TextView
+                android:id="@+id/station_txt_startcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="45dp"
+                android:hint="出发城市"
+                android:textSize="20dp"
+                android:background="@android:color/transparent"/>
+        <TextView
+                android:id="@+id/station_txt_input_startcity"
+                style="@style/station_txt_input"
+                android:layout_marginTop="10dp"
+                android:text="上海"/>
+        <TextView
+                android:id="@+id/station_txt_endcity"
+                android:layout_below="@id/station_txt_startcity"
+                android:layout_alignLeft="@id/station_txt_startcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:hint="到达城市"
+                android:textSize="20dp"
+                android:background="@android:color/transparent"/>
+        <TextView
+                android:id="@+id/station_txt_input_endcity"
+                style="@style/station_txt_input"
+                android:layout_below="@id/station_txt_input_startcity"
+                android:text="北京"/>
+    </RelativeLayout>
+
+
+    <include
+            android:layout_below="@id/station_relativelayout_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/search_half_bottom"/>
+</RelativeLayout>
