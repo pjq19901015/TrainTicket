@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="20dp">
+    <TextView
+            android:id="@+id/expand_item_txt_ticket_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:text="一等座"/>
+    <TextView
+            android:id="@+id/expand_item_txt_ticket_number"
+            android:layout_toRightOf="@id/expand_item_txt_ticket_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:text="余票"/>
+    <TextView
+            android:id="@+id/expand_item_txt_ticket_price"
+            android:layout_toRightOf="@id/expand_item_txt_ticket_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:text="Y50"/>
+    <Button
+            android:id="@+id/expand_item_btn_book"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预定"
+            android:background="@drawable/book"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"/>
+</RelativeLayout>

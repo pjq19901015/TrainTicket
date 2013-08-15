@@ -1,10 +1,13 @@
 package com.threeh.trainticket;
 
+import android.app.ExpandableListActivity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
+import com.threeh.trainticket.adapter.TrainExpandListAdapter;
 import com.threeh.trainticket.adapter.TrainListAdapter;
 import com.threeh.trainticket.entity.Trains;
 import com.threeh.trainticket.interfaces.ActivityInterface;
@@ -21,8 +24,8 @@ import com.trainOrderService.trainOrderService;
 public class TrainListActivity extends BaseActivity implements ActivityInterface {
     private String mStrStartCity, mStrEndCity, mStrDate;
     private TextView mTxtTitle;
-    private XListView mListView;
-    private TrainListAdapter mAdapter;
+    private ExpandableListView mListView;
+    private TrainExpandListAdapter mAdapter;
     private Trains mTrains;
     private Handler mHandler = new Handler() {
         @Override
@@ -47,7 +50,7 @@ public class TrainListActivity extends BaseActivity implements ActivityInterface
     @Override
     public void findView(){
         mTxtTitle = (TextView) this.findViewById(R.id.titlebar_txt_title);
-        mListView = (XListView) findViewById(R.id.train_list_lvi);
+        mListView = (ExpandableListView) findViewById(R.id.train_list_lvi);
     }
 
     @Override
@@ -62,7 +65,6 @@ public class TrainListActivity extends BaseActivity implements ActivityInterface
     @Override
     public void addAction() {
         mTxtTitle.setText(mStrStartCity + "-" + mStrEndCity);
-        mListView.setPullLoadEnable(true);
     }
 
     /**
@@ -83,7 +85,8 @@ public class TrainListActivity extends BaseActivity implements ActivityInterface
                         data.add(new DGTicketPrice("G101", "高铁"));*/
                         trainOrderService service = new trainOrderService();
                         mTrains = service.getAllTrainCodeAndPrice("上海","南京","2013-08-16");
-                        mAdapter = new TrainListAdapter(TrainListActivity.this, mTrains.getTrainCodeAndPriceList());
+                        //mAdapter = new TrainListAdapter(TrainListActivity.this, mTrains.getTrainCodeAndPriceList());
+                        mAdapter = new TrainExpandListAdapter(TrainListActivity.this,mTrains.getTrainCodeAndPriceList());
                     } catch (Exception e){
                     }
                     Message message = mHandler.obtainMessage();

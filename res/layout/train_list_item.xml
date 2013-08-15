@@ -15,7 +15,7 @@
                 android:id="@+id/train_list_item_txt_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="@android:color/black"
                 android:text="G101"/>
         <TextView
@@ -23,9 +23,89 @@
                 android:layout_below="@id/train_list_item_txt_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
+                android:textSize="8dp"
                 android:textColor="@android:color/black"
                 android:text="高速动车"/>
     </RelativeLayout>
+    <ImageView
+            android:id="@+id/train_list_item_imgview_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow"/>
+    <RelativeLayout
+            android:id="@+id/train_list_item_relalayout_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/train_list_item_relalayout_left"
+            android:layout_toLeftOf="@id/train_list_item_imgview_arrow"
+            android:layout_margin="12dp">
+        <TextView
+                android:id="@+id/train_list_item_txt_startcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:text="北京"/>
+        <ImageView
+                android:id="@+id/train_list_item_imgview_cityarrow"
+                android:layout_toRightOf="@id/train_list_item_txt_startcity"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/city_arrow"/>
+        <TextView
+                android:id="@+id/train_list_item_txt_endcity"
+                android:layout_toRightOf="@id/train_list_item_imgview_cityarrow"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:text="上海"/>
+        <ImageView
+                android:id="@+id/train_list_item_imgview_start"
+                android:layout_below="@id/train_list_item_txt_startcity"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start"/>
+        <TextView
+                android:id="@+id/train_list_item_txt_starttime"
+                android:layout_toRightOf="@id/train_list_item_imgview_start"
+                android:layout_alignBottom="@id/train_list_item_imgview_start"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@android:color/black"
+                android:text="07:00"/>
+        <ImageView
+                android:id="@+id/train_list_item_imgview_end"
+                android:layout_alignBottom="@id/train_list_item_imgview_start"
+                android:layout_toRightOf="@id/train_list_item_txt_starttime"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/end"/>
+        <TextView
+                android:id="@+id/train_list_item_txt_endtime"
+                android:layout_alignBottom="@id/train_list_item_imgview_start"
+                android:layout_toRightOf="@id/train_list_item_imgview_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="12:00"/>
+    </RelativeLayout>
+
 
 </RelativeLayout>

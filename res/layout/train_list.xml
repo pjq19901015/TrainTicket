@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             layout="@layout/chosedate_bar"/>
-    <com.threeh.trainticket.widget.XListView
+    <ExpandableListView
             android:id="@+id/train_list_lvi"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
@@ -22,5 +22,6 @@
             android:paddingRight="6dp"
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
-            android:divider="@null"/>
+            android:divider="@null"
+            android:groupIndicator="@null"/>
 </LinearLayout>
