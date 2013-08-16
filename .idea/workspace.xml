@@ -27,24 +27,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af31e999-047b-4d15-ac1c-a46cda9d9a55" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\res\drawable-hdpi\anxiaxinxikuang.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\res\drawable-hdpi\query_highspeed_trainl.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\res\drawable-hdpi\query_highspeed_trainl_bg.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\res\drawable-hdpi\shouye_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\res\drawable-hdpi\xinxikuang.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/titlebar.xml" afterPath="$PROJECT_DIR$/res/layout/titlebar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/train_list.xml" afterPath="$PROJECT_DIR$/res/layout/train_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/train_list_item.xml" afterPath="$PROJECT_DIR$/res/layout/train_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/train_list_item_selector.xml" afterPath="$PROJECT_DIR$/res/drawable/train_list_item_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\src\com\threeh\trainticket\HomeActivity.java" afterPath="$PROJECT_DIR$/src/com/threeh/trainticket/HomeActivity.java" />
+      <change type="MODIFICATION" beforePath="C:\Users\zhaoxu\Desktop\train\TrainTicket\src\com\threeh\trainticket\TrainListActivity.java" afterPath="$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrainTicket.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376547052702" ignored="false" />
+    <file path="/Dummy.txt" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376617933326" ignored="false" />
     <file path="/home.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376019771052" ignored="false" />
-    <file path="/HomeActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376274338368" ignored="false" />
+    <file path="/HomeActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376633224306" ignored="false" />
     <file path="/__dummy.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376014359911" ignored="false" />
-    <file path="/strings.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376014388982" ignored="false" />
+    <file path="/strings.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376632254335" ignored="false" />
     <file path="/a.dummy" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376018211324" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376469229207" ignored="false" />
     <file path="/fragment.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376301274835" ignored="false" />
@@ -64,7 +62,7 @@
     <file path="/QueryTrainActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376295767825" ignored="false" />
     <file path="/styles.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376292305404" ignored="false" />
     <file path="/rdobtn_selector.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376273300244" ignored="false" />
-    <file path="/TrainListActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376549405436" ignored="false" />
+    <file path="/TrainListActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376631668274" ignored="false" />
     <file path="/BaseActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376274228370" ignored="false" />
     <file path="/station.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376292483067" ignored="false" />
     <file path="/arrow_selector.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376277597959" ignored="false" />
@@ -91,6 +89,11 @@
     <file path="/expanda_item.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376547866195" ignored="false" />
     <file path="/TrainExpandListAdapter.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376560465286" ignored="false" />
     <file path="/expand_item.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376550758816" ignored="false" />
+    <file path="/login.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376633146714" ignored="false" />
+    <file path="/novip_login_btn_selector.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376620238486" ignored="false" />
+    <file path="/register_btn_selector.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376625101606" ignored="false" />
+    <file path="/login_btn_selector.xml" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376625248532" ignored="false" />
+    <file path="/LoginActivity.java" changelist="af31e999-047b-4d15-ac1c-a46cda9d9a55" time="1376633282782" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -141,6 +143,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -153,16 +156,81 @@
       <file leaf-file-name="TrainListActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0">
+            <state line="88" column="42" selection-start="3099" selection-end="3099" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#2375#3528#0" expanded="true" />
+                <element signature="e#3513#3514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="50" selection-start="3436" selection-end="3436" vertical-scroll-proportion="-0.7407407">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainExpandListAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="26" selection-start="252" selection-end="265" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="63" selection-start="495" selection-end="495" vertical-scroll-proportion="0.49751243">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/home.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="30" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_btn_selector.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/login_btn_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="46" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainExpandListAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/adapter/TrainExpandListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="23" selection-start="6786" selection-end="6786" vertical-scroll-proportion="0.8469388">
+            <state line="81" column="62" selection-start="2245" selection-end="2245" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,46 +244,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="56" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-17.777779">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_list_item_selector.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/drawable/train_list_item_selector.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="titlebar.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/titlebar.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="793" selection-end="793" vertical-scroll-proportion="-12.592592">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="back_btn_selector.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/drawable/back_btn_selector.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrainOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/trainOrderService/TrainOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+            <state line="28" column="57" selection-start="1332" selection-end="1332" vertical-scroll-proportion="-1.4814814">
               <folding />
             </state>
           </provider>
@@ -239,22 +268,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/trainOrderService/trainOrderService.java" />
-        <option value="$PROJECT_DIR$/res/drawable/preday_btn_selector.xml" />
-        <option value="$PROJECT_DIR$/res/drawable/nextday_btn_selector.xml" />
-        <option value="$PROJECT_DIR$/res/layout/chosetime_bar.xml" />
-        <option value="$PROJECT_DIR$/res/layout/chosedate_bar.xml" />
-        <option value="$PROJECT_DIR$/res/drawable/back_btn_selector.xml" />
-        <option value="$PROJECT_DIR$/res/layout/titlebar.xml" />
         <option value="$PROJECT_DIR$/res/drawable/train_list_item_selector.xml" />
         <option value="$PROJECT_DIR$/res/layout/expanda_item.xml" />
         <option value="$PROJECT_DIR$/src/com/threeh/trainticket/adapter/TrainListAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/train_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/expand_item.xml" />
         <option value="$PROJECT_DIR$/res/layout/train_list_item.xml" />
         <option value="$PROJECT_DIR$/src/com/threeh/trainticket/adapter/TrainExpandListAdapter.java" />
+        <option value="$PROJECT_DIR$/res/drawable/novip_login_btn_selector.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/register_btn_selector.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/login_btn_selector.xml" />
+        <option value="$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/login.xml" />
+        <option value="$PROJECT_DIR$/src/com/threeh/trainticket/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/threeh/trainticket/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -290,7 +319,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,10 +355,6 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trainOrderService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -363,19 +388,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trainticket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,31 +438,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrainTicket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TrainTicket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,15 +459,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../intellijWorkplace" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -515,19 +514,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -554,6 +540,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -645,11 +644,11 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.8854701" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19242424" sideWeight="0.8854701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.86153847" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19242424" sideWeight="0.86153847" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22803031" sideWeight="0.73504275" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22803031" sideWeight="0.86153847" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -659,15 +658,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26837608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24273504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13846155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23418804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25151515" sideWeight="0.757265" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63760686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25151515" sideWeight="0.774359" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22564103" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -735,92 +734,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/trainOrderService/trainOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1026" column="52" selection-start="43676" selection-end="43676" vertical-scroll-proportion="2.4210527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/chosedate_bar.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.5696203">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/preday_btn_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="294" selection-end="294" vertical-scroll-proportion="0.2991453">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/nextday_btn_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="273" selection-end="273" vertical-scroll-proportion="0.17094018">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/back_btn_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/titlebar.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="793" selection-end="793" vertical-scroll-proportion="-12.592592">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/entity/Trains.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/entity/DGTicketPrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="62" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/entity/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/adapter/TrainListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="1831" selection-end="1910" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/train_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="787" selection-end="787" vertical-scroll-proportion="0.45822784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/train_list_item_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
@@ -838,29 +751,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/train_list_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/trainOrderService/TrainOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="56" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-17.777779">
+        <state line="22" column="13" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/train_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0">
+        <state line="10" column="50" selection-start="474" selection-end="474" vertical-scroll-proportion="-7.4074073">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/novip_login_btn_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="57" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/register_btn_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/login_btn_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="46" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/adapter/TrainExpandListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="23" selection-start="6786" selection-end="6786" vertical-scroll-proportion="0.8469388">
+        <state line="81" column="62" selection-start="2245" selection-end="2245" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/train_list_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="1332" selection-end="1332" vertical-scroll-proportion="-1.4814814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/TrainListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="42" selection-start="3099" selection-end="3099" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2375#3528#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="50" selection-start="3436" selection-end="3436" vertical-scroll-proportion="-0.7407407">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/home.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="74" selection-start="1684" selection-end="1697" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1530#1768#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/threeh/trainticket/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="252" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="63" selection-start="495" selection-end="495" vertical-scroll-proportion="0.49751243">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -43,5 +43,12 @@ public class HomeActivity extends BaseActivity implements ActivityInterface {
                 startActivity(intent);
             }
         });
+        mImgviewOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

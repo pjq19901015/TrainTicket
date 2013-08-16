@@ -86,12 +86,15 @@ public class TrainListActivity extends BaseActivity implements ActivityInterface
                         trainOrderService service = new trainOrderService();
                         mTrains = service.getAllTrainCodeAndPrice("上海","南京","2013-08-16");
                         //mAdapter = new TrainListAdapter(TrainListActivity.this, mTrains.getTrainCodeAndPriceList());
-                        mAdapter = new TrainExpandListAdapter(TrainListActivity.this,mTrains.getTrainCodeAndPriceList());
+                        if(mTrains != null){
+                            mAdapter = new TrainExpandListAdapter(TrainListActivity.this,mTrains.getTrainCodeAndPriceList());
+                            Message message = mHandler.obtainMessage();
+                            message.what = 1;
+                            mHandler.sendMessage(message);
+                        }
+
                     } catch (Exception e){
                     }
-                    Message message = mHandler.obtainMessage();
-                    message.what = 1;
-                    mHandler.sendMessage(message);
                 }
             }).start();
             return null;
