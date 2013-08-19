@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ExpandableListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import com.threeh.trainticket.adapter.TrainExpandListAdapter;
 import com.threeh.trainticket.adapter.TrainListAdapter;
 import com.threeh.trainticket.entity.Trains;
@@ -27,10 +24,11 @@ import com.trainOrderService.trainOrderService;
 public class TrainListActivity extends BaseActivity
         implements ActivityInterface,ExpandableListView.OnGroupClickListener {
     private String mStrStartCity, mStrEndCity, mStrDate;
-    private TextView mTxtTitle;
+    private TextView mTxtTitle,mTxtDate;
     private ExpandableListView mListView;
     private TrainExpandListAdapter mAdapter;
     private Trains mTrains;
+    private Button mBtnBack;
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -54,7 +52,9 @@ public class TrainListActivity extends BaseActivity
     @Override
     public void findView(){
         mTxtTitle = (TextView) this.findViewById(R.id.titlebar_txt_title);
+        mTxtDate = (TextView) this.findViewById(R.id.chosedate_bar_txt_date);
         mListView = (ExpandableListView) findViewById(R.id.train_list_lvi);
+        mBtnBack = (Button) this.findViewById(R.id.titlebar_btn_back);
     }
 
     @Override
@@ -69,7 +69,14 @@ public class TrainListActivity extends BaseActivity
     @Override
     public void addAction() {
         mTxtTitle.setText(mStrStartCity + "-" + mStrEndCity);
+        mTxtDate.setText(mStrDate);
         mListView.setOnGroupClickListener(this);
+        mBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override
@@ -97,7 +104,7 @@ public class TrainListActivity extends BaseActivity
                         data.add(new DGTicketPrice("G101", "高铁"));
                         data.add(new DGTicketPrice("G101", "高铁"));*/
                         trainOrderService service = new trainOrderService();
-                        mTrains = service.getAllTrainCodeAndPrice("上海","南京","2013-08-16");
+                        mTrains = service.getAllTrainCodeAndPrice(mStrStartCity,mStrEndCity,mStrDate);
                         //mAdapter = new TrainListAdapter(TrainListActivity.this, mTrains.getTrainCodeAndPriceList());
                         if(mTrains != null){
                             mAdapter = new TrainExpandListAdapter(TrainListActivity.this,mTrains.getTrainCodeAndPriceList());
@@ -105,7 +112,6 @@ public class TrainListActivity extends BaseActivity
                             message.what = 1;
                             mHandler.sendMessage(message);
                         }
-
                     } catch (Exception e){
                     }
                 }

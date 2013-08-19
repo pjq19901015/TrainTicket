@@ -43,7 +43,7 @@ public class QueryTrainByStationActivity extends BaseActivity implements Activit
                         new Intent(QueryTrainByStationActivity.this,TrainListActivity.class);
                 intent.putExtra("startCity","上海");
                 intent.putExtra("endCity","苏州");
-                intent.putExtra("date","2013-08-15");
+                intent.putExtra("date","2013-08-20");
                 startActivity(intent);
             }
         });

@@ -3,17 +3,22 @@ package com.threeh.trainticket;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import com.threeh.trainticket.interfaces.ActivityInterface;
 
 
-public class HomeActivity extends BaseActivity implements ActivityInterface {
+public class HomeActivity extends FragmentActivity implements ActivityInterface {
     private ImageView mImgviewQueryTrain,mImgviewQueryHighspeedTrain,mImgviewAttention,mImgviewOrder;
+    private HomeViewpageAdapter mAdapter;
+    private ViewPager mPager;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.home);
         findView();
         initdata();
@@ -27,11 +32,12 @@ public class HomeActivity extends BaseActivity implements ActivityInterface {
                 (ImageView) this.findViewById(R.id.home_imgview_query_highspeed_train);
         mImgviewAttention = (ImageView) this.findViewById(R.id.home_imgview_attention);
         mImgviewOrder = (ImageView) this.findViewById(R.id.home_imgview_order);
+        mPager = (ViewPager) this.findViewById(R.id.home_viewpage);
     }
 
     @Override
     public void initdata() {
-
+        mAdapter = new HomeViewpageAdapter(getSupportFragmentManager());
     }
 
     @Override
@@ -50,5 +56,6 @@ public class HomeActivity extends BaseActivity implements ActivityInterface {
                 startActivity(intent);
             }
         });
+        mPager.setAdapter(mAdapter);
     }
 }

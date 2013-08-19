@@ -3,7 +3,9 @@ package com.threeh.trainticket;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
 import com.threeh.trainticket.interfaces.ActivityInterface;
@@ -20,6 +22,7 @@ public class QueryTrainActivity extends TabActivity implements ActivityInterface
     private RadioGroup mRadiogroup;
     private static final String STATION_TAB = "station";
     private static final String NUMBER_TAB = "number";
+    private Button mBtnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +34,9 @@ public class QueryTrainActivity extends TabActivity implements ActivityInterface
     }
 
     @Override
-    public void findView() {
+    public void findView(){
         mRadiogroup = (RadioGroup) this.findViewById(R.id.query_train_radiogroup);
+        mBtnBack = (Button) this.findViewById(R.id.titlebar_btn_back);
     }
 
     @Override
@@ -53,6 +57,12 @@ public class QueryTrainActivity extends TabActivity implements ActivityInterface
                         mTabhost.setCurrentTabByTag(NUMBER_TAB);
                         break;
                 }
+            }
+        });
+        mBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
