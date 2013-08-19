@@ -18,7 +18,7 @@
             android:text="2011-1-5"
             android:textColor="@color/blue"/>
     <Button
-            android:id="@+id/chosedate_bar_btn_prev"
+            android:id="@+id/chosedate_bar_btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

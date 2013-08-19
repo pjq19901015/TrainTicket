@@ -41,6 +41,6 @@
             android:layout_height="wrap_content"
             android:text="预定"
             android:background="@drawable/book"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:layout_marginRight="10dp"/>
 </RelativeLayout>

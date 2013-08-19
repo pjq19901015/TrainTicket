@@ -119,6 +119,9 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
             convertView.setTag(holder);
         } else {
             holder = (ChildViewHolder) convertView.getTag();
+            holder.btnBook.setTextColor(R.color.white);
+            holder.btnBook.setBackgroundResource(R.drawable.book);
+            holder.btnBook.setText("预定");
         }
         if(isHighSpeed(groupPosition)){
             holder.ticketType.setText(mHighSpeedSeatType[childPosition]);
@@ -154,7 +157,7 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
     }
 
     /**
-     * 初始化拓展项要显示的数据
+     *   初始化拓展项要显示的数据
      */
     private void initChildData(int groupPosition){
         if(isHighSpeed(groupPosition)){
@@ -215,9 +218,9 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
             button.setText("无票");
             button.setTextColor(R.color.gray);
         }else {
+            button.setTextColor(R.color.white);
             button.setBackgroundResource(R.drawable.book);
             button.setText("预定");
-            button.setTextColor(android.R.color.white);
         }
     }
 
