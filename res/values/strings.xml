@@ -9,4 +9,6 @@
     <string name="xlistview_footer_hint_ready">松开载入更多</string>
     <string name="username">用户名</string>
     <string name="password">密码</string>
+    <string name="submit">提交</string>
+    <string name="login">登录</string>
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/passenger_list_item_bg">
+    <ImageButton
+            android:id="@+id/passenger_list_item_imgbtn_chose"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/passenger_chose_btn_selector"/>
+    <TextView
+            android:id="@+id/passenger_list_item_txt_name"
+            android:layout_toRightOf="@id/passenger_list_item_imgbtn_chose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="姓名：某某"
+            android:textColor="@android:color/black"/>
+    <TextView
+            android:id="@+id/passenger_list_item_txt_identitycard"
+            android:layout_alignLeft="@id/passenger_list_item_txt_name"
+            android:layout_below="@id/passenger_list_item_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="身份证：888888888888888888"
+            android:textColor="@android:color/black"/>
+</RelativeLayout>

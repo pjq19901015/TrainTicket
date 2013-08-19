@@ -19,5 +19,13 @@
             android:textSize="21dp"
             android:text="火车票"
             android:layout_centerInParent="true"/>
-
+    <Button
+            android:id="@+id/titlebar_btn_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/titlebar_right_btn_selector"
+            android:visibility="gone"/>
 </RelativeLayout>
