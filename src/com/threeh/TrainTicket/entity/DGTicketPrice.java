@@ -89,7 +89,16 @@ public class DGTicketPrice implements Serializable {
     public int yzYp;
     public boolean yzYpSpecified;
     public String zdz;
-    
+    private boolean  isChecked;
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
+    }
+
     public DGTicketPrice(){}
 
     public DGTicketPrice(String trainCode, String trainType) {

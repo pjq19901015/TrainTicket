@@ -15,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="2011-1-5"/>
+            android:text="2011-1-5"
+            android:textColor="@color/blue"/>
     <Button
             android:id="@+id/chosedate_bar_btn_prev"
             android:layout_width="wrap_content"

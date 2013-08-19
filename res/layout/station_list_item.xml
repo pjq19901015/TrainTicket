@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:background="@drawable/station_list_item_bg">
+    <TextView
+            android:id="@+id/station_list_item_txt_station"
+            style="@style/station_list_item_txt"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="1 上海虹桥"/>
+    <TextView
+            android:id="@+id/station_list_item_txt_arrive"
+            style="@style/station_list_item_txt"
+            android:layout_toRightOf="@id/station_list_item_txt_station"
+            android:layout_width="70dp"
+            android:text="始发站"/>
+    <TextView
+            android:id="@+id/station_list_item_txt_starttime"
+            style="@style/station_list_item_txt"
+            android:layout_toRightOf="@id/station_list_item_txt_arrive"
+            android:layout_width="60dp"
+            android:text="06:30"
+            android:textColor="@color/orange"/>
+    <TextView
+            android:id="@+id/station_list_item_txt_remain"
+            style="@style/station_list_item_txt"
+            android:layout_toRightOf="@id/station_list_item_txt_starttime"
+            android:layout_width="60dp"
+            android:text="1小时"/>
+</RelativeLayout>

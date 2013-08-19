@@ -5,8 +5,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.threeh.trainticket.adapter.TrainExpandListAdapter;
 import com.threeh.trainticket.adapter.TrainListAdapter;
 import com.threeh.trainticket.entity.Trains;
@@ -21,7 +24,8 @@ import com.trainOrderService.trainOrderService;
  * Time: 下午5:37
  * To change this template use File | Settings | File Templates.
  */
-public class TrainListActivity extends BaseActivity implements ActivityInterface {
+public class TrainListActivity extends BaseActivity
+        implements ActivityInterface,ExpandableListView.OnGroupClickListener {
     private String mStrStartCity, mStrEndCity, mStrDate;
     private TextView mTxtTitle;
     private ExpandableListView mListView;
@@ -65,6 +69,15 @@ public class TrainListActivity extends BaseActivity implements ActivityInterface
     @Override
     public void addAction() {
         mTxtTitle.setText(mStrStartCity + "-" + mStrEndCity);
+        mListView.setOnGroupClickListener(this);
+    }
+
+    @Override
+    public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+        boolean isChecked = mTrains.getTrainCodeAndPriceList().get(groupPosition).isChecked();
+        mTrains.getTrainCodeAndPriceList().get(groupPosition).setChecked(!isChecked);
+        mAdapter.notifyDataSetChanged();
+        return false;
     }
 
     /**

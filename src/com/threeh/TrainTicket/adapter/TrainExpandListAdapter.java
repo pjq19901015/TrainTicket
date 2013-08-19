@@ -25,10 +25,10 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
     private Context mContext;
     private String[] mHighSpeedSeatType = new String[]{"二等座","一等座"};
     private String[] mNormalSeatType =  new String[]{"硬座","软座","硬卧","软卧"};
-    private String[] mHighSpeedPrice;
-    private String[] mNormalPrice;
-    private String[] mHighSpeedNumber;
-    private String[] mNormalNumber;
+    private String[] mHighSpeedPrice = new String[2];
+    private String[] mNormalPrice = new String[4];
+    private String[] mHighSpeedNumber = new String[2];
+    private String[] mNormalNumber = new String[4];
 
     public TrainExpandListAdapter(Context context, List<DGTicketPrice> data) {
         this.data = data;
@@ -90,6 +90,11 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+        if(data.get(groupPosition).isChecked()){
+            convertView.setBackgroundResource(R.drawable.list_item_focus);
+        }else {
+            convertView.setBackgroundResource(R.drawable.list_item_unfocus);
+        }
         holder.number.setText(data.get(groupPosition).getTrainCode());
         holder.type.setText(data.get(groupPosition).getTrainType());
         holder.startCity.setText(data.get(groupPosition).getStartCity());
@@ -119,10 +124,14 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
             holder.ticketType.setText(mHighSpeedSeatType[childPosition]);
             holder.ticketNumber.setText(mHighSpeedNumber[childPosition]);
             holder.ticketPrice.setText(mHighSpeedPrice[childPosition]);
+
+            setNoticket(holder.btnBook,mHighSpeedNumber[childPosition]);
         }else {
             holder.ticketType.setText(mNormalSeatType[childPosition]);
             holder.ticketNumber.setText(mNormalNumber[childPosition]);
             holder.ticketPrice.setText(mNormalPrice[childPosition]);
+
+            setNoticket(holder.btnBook,mNormalNumber[childPosition]);
         }
         return convertView;
     }
@@ -145,23 +154,70 @@ public class TrainExpandListAdapter extends BaseExpandableListAdapter {
     }
 
     /**
-     *初始化拓展项要显示的数据
+     * 初始化拓展项要显示的数据
      */
     private void initChildData(int groupPosition){
         if(isHighSpeed(groupPosition)){
-            mHighSpeedNumber = new String[]{ String.valueOf(data.get(groupPosition).getRz2Yp()),
-                                    String.valueOf(data.get(groupPosition).getRz1Yp())};
-            mHighSpeedPrice = new String[]{ String.valueOf(data.get(groupPosition).getRz2()),
-                                   String.valueOf(data.get(groupPosition).getRz1())};
+            if(data.get(groupPosition).getRz2Ok() == 0){
+                mHighSpeedNumber[0] = "余票:" + String.valueOf(data.get(groupPosition).getRz2Yp());
+                mHighSpeedPrice[0] = "￥" + String.valueOf(data.get(groupPosition).getRz2());
+            }else {
+                mHighSpeedNumber[0] = "-";
+                mHighSpeedPrice[0] = "-";
+            }
+            if(data.get(groupPosition).getRz1Ok() == 0){
+                mHighSpeedNumber[1] = "余票:" + String.valueOf(data.get(groupPosition).getRz1Yp());
+                mHighSpeedPrice[1] = "￥" + String.valueOf(data.get(groupPosition).getRz1());
+            }else {
+                mHighSpeedNumber[1] = "-";
+                mHighSpeedPrice[1] = "-";
+            }
         }else{
-            mNormalNumber = new String[]{ String.valueOf(data.get(groupPosition).getYzYp()),
-                                    String.valueOf(data.get(groupPosition).getRzYp()),
-                                    String.valueOf(data.get(groupPosition).getYwYp()),
-                                    String.valueOf(data.get(groupPosition).getRwYp())};
-            mNormalPrice = new String[]{ String.valueOf(data.get(groupPosition).getYz()),
-                                   String.valueOf(data.get(groupPosition).getRz()),
-                                   String.valueOf(data.get(groupPosition).getYws()),
-                                   String.valueOf(data.get(groupPosition).getRws())};
+            if(data.get(groupPosition).getYzOk() == 0){
+                mNormalNumber[0] = "余票:" + String.valueOf(data.get(groupPosition).getYzYp());
+                mNormalPrice[0] = "￥" + String.valueOf(data.get(groupPosition).getYz());
+            }else {
+                mNormalNumber[0] = "-";
+                mNormalPrice[0] = "-";
+            }
+            if(data.get(groupPosition).getRzOk() == 0){
+                mNormalNumber[1] = "余票:" + String.valueOf(data.get(groupPosition).getRzYp());
+                mNormalPrice[1] = "￥" + String.valueOf(data.get(groupPosition).getRz());
+            }else {
+                mNormalNumber[1] = "-";
+                mNormalPrice[1] = "-";
+            }
+            if(data.get(groupPosition).getYwsOk() == 0 || data.get(groupPosition).getYwzOk() == 0 ||
+                    data.get(groupPosition).getYwxOk() == 0){
+                mNormalNumber[2] = "余票:" + String.valueOf(data.get(groupPosition).getYwYp());
+                mNormalPrice[2] = "￥" + String.valueOf(data.get(groupPosition).getYws());
+            }else {
+                mNormalNumber[2] = "-";
+                mNormalPrice[2] = "-";
+            }
+            if(data.get(groupPosition).getRwsOk() == 0 || data.get(groupPosition).getRwxOk() == 0){
+                mNormalNumber[3] = "余票:" + String.valueOf(data.get(groupPosition).getRwYp());
+                mNormalPrice[3] = "￥" + String.valueOf(data.get(groupPosition).getRws());
+            }else {
+                mNormalNumber[3] = "-";
+                mNormalPrice[3] = "-";
+            }
+        }
+    }
+
+    /**
+     * 显示无票
+     * @param button
+     */
+    private void setNoticket(Button button,String number){
+        if("-" .equals(number)){
+            button.setBackgroundResource(R.drawable.no_ticket);
+            button.setText("无票");
+            button.setTextColor(R.color.gray);
+        }else {
+            button.setBackgroundResource(R.drawable.book);
+            button.setText("预定");
+            button.setTextColor(android.R.color.white);
         }
     }
 
