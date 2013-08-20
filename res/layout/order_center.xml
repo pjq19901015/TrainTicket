@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/query_train_page_bg">
+    <include
+            android:id="@+id/order_center_include_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/titlebar"/>
+    <RadioGroup android:id="@+id/order_center_radiogroup_date"
+                android:layout_below="@id/order_center_include_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+    <RadioButton android:id="@+id/order_center_rdobtn_now"
+                 android:checked="true"
+                 style="@style/order_center_radiobtn_date"
+                 android:text="三个月内订单"/>
+    <RadioButton android:id="@+id/home_rdobtn_search"
+                 style="@style/order_center_radiobtn_date"
+                 android:text="三个月前订单"
+                 android:textColor="@android:color/black"/>
+    </RadioGroup>
+
+    <RadioGroup android:id="@+id/order_center_radiogroup_state"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/order_center_radiogroup_state_bg">
+        <RadioButton android:id="@+id/order_center_rdobtn_processing"
+                     android:checked="true"
+                     style="@style/order_center_radiobtn_date"
+                     android:background="@drawable/order_center_rdobtn_processing_selector"/>
+        <RadioButton android:id="@+id/order_center_rdobtn_obiligation"
+                     style="@style/order_center_radiobtn_date"
+                     android:background="@drawable/order_center_rdobtn_obiligation_selector"/>
+        <RadioButton android:id="@+id/order_center_rdobtn_ticked"
+                     style="@style/order_center_radiobtn_date"
+                     android:background="@drawable/order_center_rdobtn_ticked_selector"/>
+    </RadioGroup>
+
+
+</RelativeLayout>
